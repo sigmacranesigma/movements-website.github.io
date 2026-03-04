@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feel Everything</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+        <link href="./styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <img class="logo" src="./assets/logo.png" alt="Movements Band Logo">
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#discography">Discography</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#store">Store</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="#home">Home</a></li>
+                    <li class="hideOnMobile"><a href="#about">About</a></li>
+                    <li class="hideOnMobile"><a href="#discography">Discography</a></li>
+                    <li class="hideOnMobile"><a href="#tour">Tour</a></li>
+                    <li class="hideOnMobile"><a href="#store">Store</a></li>
+                    <li class="hideOnMobile"><a href="#contact">Contact Us</a></li>
+                    <li class="menu-button"onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <h2 id="top" style="font-size: 64px;">Feel Everything</h2>
+            <p id="home" style="color:black">A fan-made website for the band Movements (and SkillsUSA practice)</p>
+        </div>
+
+        <div class="container featured-album">
+            <h2 id="featured" style="font-size: 64px;">Featured Album</h2>
+            <img src="./assets/albums/ruckus.webp" alt="Ruckus Album Cover" width="auto" height="400px">
+            <p class="album-description">Ruckus! showcases Movements at their most confident and expansive. Blending atmospheric textures with sharp lyrical introspection, the album captures the tension between internal struggle and outward resilience. The band pushes their sound forward while maintaining the emotional honesty that defines them.</p>
+            <a href="https://open.spotify.com/album/3UO7dRJBreXDCBlqfCWBPo" target="_blank"><button class="featured-button">Listen Now</button></a>
+        </div>
+        
+        <div class="container about">
+            <h2 id="about" style="font-size: 64px;">Movements</h2>
+            <p class="band-description">Formed in Orange County California, Movements has become a defining voice in modern post-hardcore and alternative rock. Known for deeply personal lyrics and dynamic soundscapes, the band creates music that resonates with listeners navigating growth, identity, and mental health.</p>
+            <a href="./about.html"><button class="featured-button">Learn More</button></a>
+        </div>
+
+        <div class="container discography">
+            <h2 id="discography" style="font-size: 64px;">Discography</h2>
+            <p class="discography-description">Movements’ discography reflects both artistic growth and emotional depth. Each release expands their sound while remaining rooted in honest storytelling.</p>
+        </div>
+
+        <section class="albums-section">
+            <h2 id="albums" style="font-size: 64px;">Albums</h2>
+        <div class="container albums-grid">
+            
+                <div class="album">
+                    <img src="./assets/albums/ruckust.jpg" alt="Ruckus!">
+                    <p>Ruckus! (2023)</p>
+                </div>
+            
+                <div class="album">
+                <img src="./assets/albums/No_Good_Left_to_Give.png" alt="No Good Left to Give">
+                <p>No Good Left to Give (2020)</p>
+                </div>
+                
+                <div class="album">
+                <img src="./assets/albums/Feel_something.jpg" alt="Feel Something">
+                <p>Feel Something (2017)</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+             <div class="container eps">
+            <h2 id="eps" style="font-size: 64px;">EPs</h2>
+            <div class="image-row">
+                <div class="album">
+                    <img src="./assets/eps/Outgrown_things.png" alt="Outgrown Things">
+                    <p>Outgrown Things (2016)</p>
+                </div>
+            </div>
+        </div>
+
+             <div class="container albums">
+            <h2 id="singles" style="font-size: 64px;">singles</h2>
+            <div class="singles-grid">
+                <div class="single">
+                    <img src="./assets/singles/scripted.jpg" alt="Scripted">
+                    <p>Scripted (2015)</p>
+                </div>
+            
+                <div class="single">
+                <img src="./assets/singles/buried.jpg" alt="Buried">
+                <p>Buried (2015)</p>
+                </div>
+
+                <div class="single">
+                <img src="./assets/singles/protection.jpg" alt="Protection">
+                <p>Protection (2015)</p>
+                </div>
+
+                <div class="single">
+                <img src="./assets/singles/no_good_left_to_give_b_sides.jpg" alt="No Good Left to Give (B-Sides)">
+                <p>No Good Left to Give (B-Sides) (2021)</p>
+                </div>
+
+                <div class="single">
+                <img src="./assets/singles/cherry_thrill.jpg" alt="Cherry Thrill">
+                <p>Cherry Thrill (2022)</p>
+                </div>
+
+                <div class="single">
+                <img src="./assets/singles/barbed_wire_body.jpg" alt="Barbed Wire Body">
+                <p>Barbed Wire Body (2022)</p>
+                </div>
+
+                <div class="single">
+                <img src="./assets/singles/afraid_to_die.jpg" alt="Afraid to Die">
+                <p>Afraid to Die (2024)</p>
+                </div>
+
+                <div class="single">
+                <img src="./assets/singles/where_i_lay.jpg" alt="Where I Lay">
+                <p>Where I Lay (2025)</p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+    </body>
+    </html>
