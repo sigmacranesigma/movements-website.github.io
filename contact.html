@@ -17,39 +17,50 @@
         <link href="./styles.css" rel="stylesheet">
     </head>
     <body>
-
-            <nav id="navbar">
+        <nav id="navbar">
                 <img class="logo" src="./assets/logo.png" alt="Movements Band Logo">
                 <ul class="sidebar">
                     <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#discography">Discography</a></li>
+                    <li><a href="./index.html#home">Home</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./index.html#discography">Discography</a></li>
                     <li><a href="./tour.html">Tour</a></li>
                     <li><a href="./store.html">Store</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
                 <ul>
-                    <li class="hideOnMobile"><a href="#home">Home</a></li>
-                    <li class="hideOnMobile"><a href="#about">About</a></li>
-                    <li class="hideOnMobile"><a href="#discography">Discography</a></li>
-                    <li class="hideOnMobile"><a href="tour.html">Tour</a></li>
+                    <li class="hideOnMobile"><a href="./index.html#home">Home</a></li>
+                    <li class="hideOnMobile"><a href="./index.html#about">About</a></li>
+                    <li class="hideOnMobile"><a href="./index.html#discography">Discography</a></li>
+                    <li class="hideOnMobile"><a href="./tour.html">Tour</a></li>
                     <li class="hideOnMobile"><a href="./store.html">Store</a></li>
-                    <li class="hideOnMobile"><a href="#contact">Contact Us</a></li>
+                    <li class="hideOnMobile"><a href="./contact.html">Contact Us</a></li>
                     <li class="menu-button"onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
-
-
         <div class="container">
-            <h2 id="top" style="font-size: 64px;">About the Band</h2>
-            <p id="home" style="color:black">Movements is an American post-hardcore band formed in Southern California. Since their debut, the group has built a reputation for blending emotionally direct lyricism with immersive instrumentals. Their music often explores themes of vulnerability, mental health, relationships, and self-reflection. <br><br>
-Rather than relying solely on aggression or melancholy, Movements balances both — shifting between explosive crescendos and restrained, atmospheric passages. This dynamic approach allows their songs to feel both intimate and powerful.<br><br>
-Through consistent touring and evolving releases, the band has cultivated a dedicated following drawn to their authenticity and emotional transparency.</p><br>
-        <a href="./index.html#about"><button class="featured-button">Go back</button></a>
+            <h2 id="home" style="font-size: 64px;">Contact Us</h2>
+            <p style="color:black">Have a question about your order? Reply to your order confirmation email or use the form below to contact us. For other band-related inquiries please see below.</p>
+        </div>
+        <div class="container contact-info">
+            <form action="https://formspree.io/f/mjgenlrw" method="POST">
+            <label for="name" style="font-family: 'Open Sans', sans-serif; color:black;">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email" style="font-family: 'Open Sans', sans-serif; color:black;">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="message" style="font-family: 'Open Sans', sans-serif; color:black;">Message</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send Message</button>
+            </form>
         </div>
 
-        
+
+
+
+
+
+
+
         <script>
             function showSidebar() {
                 const sidebar = document.querySelector('.sidebar');

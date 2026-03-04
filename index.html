@@ -17,33 +17,30 @@
         <link href="./styles.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav id="navbar">
+        <nav id="navbar">
                 <img class="logo" src="./assets/logo.png" alt="Movements Band Logo">
                 <ul class="sidebar">
                     <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#discography">Discography</a></li>
-                    <li><a href="#tour">Tour</a></li>
-                    <li><a href="#store">Store</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="./tour.html">Tour</a></li>
+                    <li><a href="./store.html">Store</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
                 <ul>
                     <li class="hideOnMobile"><a href="#home">Home</a></li>
                     <li class="hideOnMobile"><a href="#about">About</a></li>
                     <li class="hideOnMobile"><a href="#discography">Discography</a></li>
-                    <li class="hideOnMobile"><a href="#tour">Tour</a></li>
-                    <li class="hideOnMobile"><a href="#store">Store</a></li>
-                    <li class="hideOnMobile"><a href="#contact">Contact Us</a></li>
+                    <li class="hideOnMobile"><a href="./tour.html">Tour</a></li>
+                    <li class="hideOnMobile"><a href="./store.html">Store</a></li>
+                    <li class="hideOnMobile"><a href="./contact.html">Contact Us</a></li>
                     <li class="menu-button"onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
-        </header>
-
-        <div class="container">
+        <div class="container" id="home">
             <h2 id="top" style="font-size: 64px;">Feel Everything</h2>
-            <p id="home" style="color:black">A fan-made website for the band Movements (and SkillsUSA practice)</p>
+            <p style="color:black">A fan-made website for the band Movements (and SkillsUSA practice)</p>
         </div>
 
         <div class="container featured-album">
@@ -70,7 +67,7 @@
             
                 <div class="album">
                     <img src="./assets/albums/ruckust.jpg" alt="Ruckus!">
-                    <p>Ruckus! (2023)</p>
+                    <p>Ruckus! (2023) (and Remixes)</p>
                 </div>
             
                 <div class="album">
@@ -143,6 +140,14 @@
             </div>
         </div>
 
+
+<footer>
+    <div class="container">
+        <p id="contact" style="color: white; text-align: left; font-family:'Bebas Neue', sans-serif; margin: 0;">
+            <a href="./contact.html" id="contacts">Contact Us</a>
+        </p>
+    </div>
+</footer>
 
         <script>
             function showSidebar() {
